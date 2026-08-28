@@ -1,4 +1,4 @@
- :root {
+  :root {
             --primary: #2c3e4e;
             --primary-light: #3a5068;
             --accent: #3d7ea6;
@@ -81,7 +81,7 @@
         .slide.active { opacity: 1; visibility: visible; z-index: 1; }
         .slide::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(44,62,78,0.88) 0%, rgba(44,62,78,0.55) 40%, rgba(44,62,78,0.3) 70%, rgba(44,62,78,0.6) 100%); z-index: 1; }
         .slide::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 200px; background: linear-gradient(to top, rgba(44,62,78,0.7) 0%, transparent 100%); z-index: 1; }
-        .slide-content { position: relative; z-index: 2; text-align: center; max-width: 850px; padding: 0 24px; opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s; }
+        .slide-content { position: relative; z-index: 2; text-align: center; max-width: 850px; padding: 0 24px; opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s; margin-bottom: 70px; }
         .slide.active .slide-content { opacity: 1; transform: translateY(0); }
         .slide-badge { display: inline-block; background: rgba(61,126,166,0.2); border: 1px solid rgba(61,126,166,0.5); color: var(--accent-light); padding: 8px 20px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; backdrop-filter: blur(10px); }
         .slide-title { font-family: var(--font-heading); font-size: 4rem; font-weight: 800; color: #fff; line-height: 1.15; margin-bottom: 18px; letter-spacing: -0.5px; }
@@ -89,7 +89,7 @@
         .slide-desc { font-size: 1.15rem; color: rgba(255,255,255,0.85); max-width: 600px; margin: 0 auto 30px; line-height: 1.8; font-weight: 300; }
         .slide-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
-        .slider-nav { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); z-index: 5; display: flex; gap: 12px; }
+        .slider-nav { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 5; display: flex; gap: 12px; }
         .slider-dot { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); cursor: pointer; transition: var(--transition); border: 2px solid rgba(255,255,255,0.3); }
         .slider-dot.active { background: var(--accent); border-color: var(--accent); width: 36px; border-radius: 6px; }
         .slider-arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 5; width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; transition: var(--transition); backdrop-filter: blur(10px); }
@@ -133,7 +133,7 @@
         .why-item h4 { font-size: 1.1rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
         .why-item p { font-size: 0.85rem; color: rgba(255,255,255,0.6); line-height: 1.6; }
 
-        .gallery-section { background: var(--bg-white); }
+        .gallery-section { padding-bottom: 60px; }
         .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 220px); gap: 16px; margin-top: 50px; }
         .gallery-item { border-radius: var(--radius-md); overflow: hidden; position: relative; cursor: pointer; transition: var(--transition); }
         .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
@@ -238,6 +238,7 @@
             .slider-arrow { width: 40px; height: 40px; font-size: 1rem; }
             .slider-arrow.prev { left: 12px; }
             .slider-arrow.next { right: 12px; }
+            .slide-content { margin-bottom: 50px; }
             .floating-buttons { bottom: 20px; right: 20px; }
             .floating-btn { width: 48px; height: 48px; font-size: 1.2rem; }
             .scroll-top { bottom: 90px; right: 20px; width: 40px; height: 40px; }
