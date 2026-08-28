@@ -1510,3 +1510,11 @@ ul {
         right: 12px;
     }
 }
+
+/* Hide dots on desktop */
+@media (min-width: 769px) {
+    .hero-slider .custom-dots {
+        display: none !important;
+    }
+}
+
